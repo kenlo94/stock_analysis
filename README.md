@@ -1,4 +1,4 @@
-# Stock Analysis using VBA
+# Stock Market Analysis using VBA
 
 ## Resources
 - Data Source: green_stocks.xlsx
