@@ -1,7 +1,7 @@
 # Stock Market Analysis using VBA
 
 ## Resources
-- Data Source: green_stocks.xlsx
+- Data source: green_stocks.xlsx
 - Software: Microsoft Excel Version 2302
 
 ## Project Overview
