@@ -55,7 +55,4 @@ In my original code, I called the Worksheets.Activate method multiple times with
 With regard to the refactored VBA code, it helped improve efficiency and logic, and reduced memory usage, as seen by the decrease in execution times. It also introduced some new bugs and errors, such as cells not populating or cells being formatted incorrectly, but I was able to correct them, ensuring the refactored code ran smoothly and accurately. In general, the benefits of refactoring often outweigh the drawbacks, as long as the process is carefully planned and executed.
 
 ---
-<div style="display: flex; justify-content: space-between;">
-    <div>Return to the <a href="https://kenlo94.github.io/">Homepage</a></div>
-    <div>View the Project on <a href="https://github.com/kenlo94/stock_analysis">GitHub</a></div>
-</div>
+Return to the [Homepage](https://kenlo94.github.io/)
