@@ -5,13 +5,12 @@
 - Software: Microsoft Excel Version 2302
 
 ## Project Objectives
-
-**Analyze the Stock data provided to identify the optimal investment options.**
+### Analyze the Stock data provided to identify the optimal investment options.
 1. Using the VBA editor within Excel, create a sequence of actions, also known as a macro, to calculate the total daily volume and yearly return of all stocks and assign that macro to a button. 
 2. The button should allow the user to input the specific year they want to analyze. The time taken for the macro to run should also pop up in a message box for the user.
 2. Lastly, create a macro to clear the worksheet so that the analysis can be rerun without issues.
 
-**After the Stock data has been analyzed,**
+### After the Stock data has been analyzed,
 1. Refactor the code used for creating the first button to improve efficiency and logic, and reduce memory usage. The time taken for the new macro to run should also pop up in a message box for the user so that they can compare execution times between the original code and the refactored code.
 
 ## Results & Analysis
