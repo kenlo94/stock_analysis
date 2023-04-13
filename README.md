@@ -4,7 +4,7 @@
 - Data source: green_stocks.xlsx
 - Software: Microsoft Excel Version 2302
 
-## Project Overview
+## Project Objectives
 
 **Analyze the Stock data provided to identify the optimal investment options.**
 1. Using the VBA editor within Excel, create a sequence of actions, also known as a macro, to calculate the total daily volume and yearly return of all stocks and assign that macro to a button. 
