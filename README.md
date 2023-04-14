@@ -15,7 +15,7 @@
 
 ## Results & Analysis
 
-Below is the intial view that the user sees when they click on the *"Run Analysis for All Stocks"* button. A message box pops up allowing the user to input which year they want to run the analysis on. In the case of the provided dataset, the user can choose between the year *2017* or *2018*.
+Below is the initial view that the user sees when they click on the *"Run Analysis for All Stocks"* button. A message box pops up allowing the user to input which year they want to run the analysis on. In the case of the provided dataset, the user can choose between the year *2017* or *2018*.
 
 ![Screenshot](Images/Initial.PNG)
 
@@ -41,17 +41,17 @@ In my original code, I called the Worksheets.Activate method multiple times with
 
 ### Advantages of refactoring code include:
 1. Improved code quality: making it more readable, maintainable, and modular
-2. Increased efficiency: faster to execute as unnecessary or redudnant code is removed and optimized
+2. Increased efficiency: faster to execute as unnecessary or redundant code is removed and optimized
 3. Easier debugging: easier to locate and fix bugs since the code is better organized and structured
 4. Enhanced flexibility: easier to modify or extend the code as needed
 
 ### Disadvantages of refactoring code include:
-1. Time-consuming: refactoring code can be a time-consuming process, particulary for large or complex data
+1. Time-consuming: refactoring code can be a time-consuming process, particularly for large or complex data
 2. Risk of introducing bugs: When making significant changes to code, there is always a risk of introducing new bugs or errors that were not present in the original code
 3. Difficulty in testing: Refactored code may require additional testing to ensure that it works correctly, which can be time-consuming and costly
 4. Possible conflicts with other systems: If the refactored code interacts with other systems or dependencies, there may be compatibility issues or conflicts that need to be addressed
 
-With regard to the refactored VBA code, it helped improve efficiency and logic, and reduced memory usage, as seen by the decrease in execution times. It also introduced some new bugs and errors, such as cells not populating or cells being formatted incorrectly, but I was able to correct them, ensuring the refactored code ran smoothly and accurately. In general, the benefits of refactoring often outweigh the drawbacks, as long as the process is carefully planned and executed.
+Regarding the refactored VBA code, it helped improve efficiency and logic, and reduced memory usage, as seen by the decrease in execution times. It also introduced some new bugs and errors, such as cells not populating or cells being formatted incorrectly, but I was able to correct them, ensuring the refactored code ran smoothly and accurately. In general, the benefits of refactoring often outweigh the drawbacks, as long as the process is carefully planned and executed.
 
 ---
 Return to the [Homepage](https://kenlo94.github.io/)
