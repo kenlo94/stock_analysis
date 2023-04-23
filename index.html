@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-07QV7C307D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-07QV7C307D');
+    </script>
+    <meta charset="utf-8">
+    <title>Stock Market Analysis using VBA</title>
+    <style>
+        #preview {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        p.has-line-data[data-line-start="21"] {
+            margin-top: 2em;
+        }
+
+        p.has-line-data[data-line-start="25"] {
+            margin-top: 2em;
+        }
+
+        p.has-line-data[data-line-start="29"] {
+            margin-top: 2em;
+        }
+
+        p.has-line-data[data-line-start="33"] {
+            margin-top: 2em;
+        }
+
+        p.has-line-data[data-line-start="37"] {
+            margin-top: 2em;
+        }
+
+        body {
+            font-size: 20px;
+        }
+
+        .my-hr {
+            margin-top: -1.25em !important;
+            margin-bottom: 0em !important;
+        }
+    </style>
+</head>
+
+<body id="preview">
+    <h1 class="code-line" data-line-start=0 data-line-end=1><a id="Stock_Market_Analysis_using_VBA_0"></a>Stock Market
+        Analysis using VBA</h1>
+    <h2 class="code-line" data-line-start=2 data-line-end=3><a id="Resources_2"></a>Resources</h2>
+    <hr class="my-hr">
+    <ul>
+        <li class="has-line-data" data-line-start="3" data-line-end="4">Data source: green_stocks.xlsx</li>
+        <li class="has-line-data" data-line-start="4" data-line-end="6">Software: Microsoft Excel Version 2302</li>
+    </ul>
+    <h2 class="code-line" data-line-start=6 data-line-end=7><a id="Project_Objectives_6"></a>Project Objectives</h2>
+    <hr class="my-hr">
+    <h3 class="code-line" data-line-start=7 data-line-end=8><a
+            id="Analyze_the_Stock_data_provided_to_identify_the_optimal_investment_options_7"></a>Analyze the Stock data
+        provided to identify the optimal investment options.</h3>
+    <ol>
+        <li class="has-line-data" data-line-start="8" data-line-end="9">Using the VBA editor within Excel, create a
+            sequence of actions, also known as a macro, to calculate the total daily volume and yearly return of all
+            stocks and assign that macro to a button.</li>
+        <li class="has-line-data" data-line-start="9" data-line-end="10">The button should allow the user to input the
+            specific year they want to analyze. The time taken for the macro to run should also pop up in a message box
+            for the user.</li>
+        <li class="has-line-data" data-line-start="10" data-line-end="12">Lastly, create a macro to clear the worksheet
+            so that the analysis can be rerun without issues.</li>
+    </ol>
+    <h3 class="code-line" data-line-start=12 data-line-end=13><a
+            id="After_the_Stock_data_has_been_analyzed_12"></a>After the Stock data has been analyzed,</h3>
+    <ol>
+        <li class="has-line-data" data-line-start="13" data-line-end="15">Refactor the code used for creating the first
+            button to improve efficiency and logic, and reduce memory usage. The time taken for the new macro to run
+            should also pop up in a message box for the user so that they can compare execution times between the
+            original code and the refactored code.</li>
+    </ol>
+    <h2 class="code-line" data-line-start=15 data-line-end=16><a id="Results__Analysis_15"></a>Results &amp; Analysis
+    </h2>
+    <hr class="my-hr">
+    <p class="has-line-data" data-line-start="17" data-line-end="18">Below is the initial view that the user sees when
+        they click on the <em>“Run Analysis for All Stocks”</em> button. A message box pops up allowing the user to
+        input which year they want to run the analysis on. In the case of the provided dataset, the user can choose
+        between the year <em>2017</em> or <em>2018</em>.</p>
+    <p class="has-line-data" data-line-start="19" data-line-end="20"><img src="Images/Initial2.PNG" alt="Screenshot"></p>
+    <p class="has-line-data" data-line-start="21" data-line-end="22">For the year 2017, 11 of the 12 stocks in the
+        dataset were positive, suggesting that they would be good stocks to invest in. The execution time using my
+        original code was 0.76 seconds.</p>
+    <p class="has-line-data" data-line-start="23" data-line-end="24"><img src="Images/20172.PNG" alt="Screenshot"></p>
+    <p class="has-line-data" data-line-start="25" data-line-end="26">For the year 2018, 10 of the 12 stocks in the
+        dataset were negative, suggesting that they would be bad stocks to invest in. The execution time using my
+        original code was 0.76 seconds.</p>
+    <p class="has-line-data" data-line-start="27" data-line-end="28"><img src="Images/20182.PNG" alt="Screenshot"></p>
+    <p class="has-line-data" data-line-start="29" data-line-end="30">In the image below, we can see that my refactored
+        code provides the same results as the original code for the year 2017, but my execution time has improved to
+        0.10 seconds.</p>
+    <p class="has-line-data" data-line-start="31" data-line-end="32"><img src="Images/2017_ref2.PNG" alt="Screenshot">
+    </p>
+    <p class="has-line-data" data-line-start="33" data-line-end="34">In the image below, we can see that my refactored
+        code provides the same results as the original code for the year 2018, but my execution time has improved to
+        0.11 seconds.</p>
+    <p class="has-line-data" data-line-start="35" data-line-end="36"><img src="Images/2018_ref2.PNG" alt="Screenshot">
+    </p>
+    <p class="has-line-data" data-line-start="37" data-line-end="38">In my original code, I called the
+        Worksheets.Activate method multiple times within the <em>“For Loop”</em>. This was not efficient because each
+        time it was being called, it caused the worksheet to be deactivated and reactivated, which takes time. I was
+        able to refactor the code by only activating the data worksheet once at the beginning of the subroutine, and
+        performing all the necessary operations on that worksheet before moving on to the next step, which helped reduce
+        the execution time.</p>
+    <h2 class="code-line" data-line-start=39 data-line-end=40><a id="Drawing_Insights_39"></a>Drawing Insights</h2>
+    <hr class="my-hr">
+    <h3 class="code-line" data-line-start=41 data-line-end=42><a
+            id="Advantages_of_refactoring_code_include_41"></a>Advantages of refactoring code include:</h3>
+    <ol>
+        <li class="has-line-data" data-line-start="42" data-line-end="43">Improved code quality: making it more
+            readable, maintainable, and modular</li>
+        <li class="has-line-data" data-line-start="43" data-line-end="44">Increased efficiency: faster to execute as
+            unnecessary or redundant code is removed and optimized</li>
+        <li class="has-line-data" data-line-start="44" data-line-end="45">Easier debugging: easier to locate and fix
+            bugs since the code is better organized and structured</li>
+        <li class="has-line-data" data-line-start="45" data-line-end="47">Enhanced flexibility: easier to modify or
+            extend the code as needed</li>
+    </ol>
+    <h3 class="code-line" data-line-start=47 data-line-end=48><a
+            id="Disadvantages_of_refactoring_code_include_47"></a>Disadvantages of refactoring code include:</h3>
+    <ol>
+        <li class="has-line-data" data-line-start="48" data-line-end="49">Time-consuming: refactoring code can be a
+            time-consuming process, particularly for large or complex data</li>
+        <li class="has-line-data" data-line-start="49" data-line-end="50">Risk of introducing bugs: When making
+            significant changes to code, there is always a risk of introducing new bugs or errors that were not present
+            in the original code</li>
+        <li class="has-line-data" data-line-start="50" data-line-end="51">Difficulty in testing: Refactored code may
+            require additional testing to ensure that it works correctly, which can be time-consuming and costly</li>
+        <li class="has-line-data" data-line-start="51" data-line-end="53">Possible conflicts with other systems: If the
+            refactored code interacts with other systems or dependencies, there may be compatibility issues or conflicts
+            that need to be addressed</li>
+    </ol>
+    <p class="has-line-data" data-line-start="53" data-line-end="54">Regarding the refactored VBA code, it helped
+        improve efficiency and logic, and reduced memory usage, as seen by the decrease in execution times. It also
+        introduced some new bugs and errors, such as cells not populating or cells being formatted incorrectly, but I
+        was able to correct them, ensuring the refactored code ran smoothly and accurately. In general, the benefits of
+        refactoring often outweigh the drawbacks, as long as the process is carefully planned and executed.</p>
+    <hr>
+    <p class="has-line-data" data-line-start="56" data-line-end="57">Return to the <a
+            href="https://kenlo94.github.io/">Homepage</a></p>
+</body>
+
+</html>
